@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+#container {
+  margin-top: 20PX;
+  background :url('./exam/img/d1.jpg') no-repeat center center/cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-gap: 10px;
+}
+
+#container ul {
+  height: 100px;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+#container li {
+  list-style-type: none;
+  margin: 7px;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  margin: auto 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  max-height: 900px;
+}
+
+.top {
+  right: 0;
+  bottom: 20px;
+  position: fixed;
+  margin: 20px;
+  padding: 20px;
+  background: gray;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  border: none;
+}

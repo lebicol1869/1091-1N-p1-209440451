@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+.class {
+    background: #000;
+}
+
+.class h2{
+    margin: 0  20px 20px;
+    color: white;
+    font-size: 5rem;
+}
+
+.carousel-caption {
+    background:gray;
+    right: 20%;
+    bottom: 20px;
+    left: 20%;
+    z-index: 10;
+    opacity: 0.8;
+    border-radius: 400px;
+} 
+
+.bd-example {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    background: url('./img/w01.jpg') no-repeat center center/cover ; 
+}
+
+.bd-example.a2 {
+    background: url('./img/02.jpg') no-repeat center center/cover ; 
+}
+.bd-example.a3 {
+    background: url('./img/03.jpg') no-repeat center center/cover ; 
+}
+.bd-example.a4 {
+    background: url('./img/04.png') no-repeat center center/cover ; 
+}
+.bd-example.a5 {
+    background: url('./img/05.png') no-repeat center center/cover ; 
+}
+.bd-example.a6 {
+    background: url('./img/6.png') no-repeat center center/cover ; 
+}
+.bd-example.a7 {
+    background: url('./img/7.png') no-repeat center center/cover ; 
+}
+.bd-example.a8 {
+    background: url('./img/8.png') no-repeat center center/cover ; 
+}
+.bd-example.a9 {
+    background: url('./img/w1.jpg') no-repeat center center/cover ; 
+}
+.bd-example.a10 {
+    background: url('./img/w2.jpg') no-repeat center center/cover ; 
+}
+.bd-example.a11 {
+    background: url('./img/w3.jpg') no-repeat center center/cover ; 
+}
+.bd-example.a12 {
+    background: url('./img/w4.jpg') no-repeat center center/cover ; 
+}
+.carousel-inner {
+    max-width: 500px;
+}
+
+.list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+.lis {
+    display: flex;
+}
+
+.midtest {
+    background: white;
+    margin-top: 40px;
+}
+.midtest .list {
+    color: #000000;
+}
+
+.midtest h2{
+    margin: 20px;
+    color: #000000;
+    font-size: 5rem;
+}
+
+.top {
+    right: 0;
+    bottom: 20px;
+    position: fixed;
+    margin: 20px;
+    padding: 20px;
+    background: gray;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+  }

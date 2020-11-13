@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Timetable</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./school_time.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="top">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./demo.html">課堂 demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./school_time.html">109-1 課表</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./resume.html">履歷表</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./diy.html">自學</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./play.html">Projedt說明</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="class_menu">
+            課程詳細資料
+            <ul id="class_list">
+            </ul>
+        </div>
+        <div class="class-click" onclick="changelist(6)">
+            課程詳情
+        </div>
+        <div class="profile">
+            <ul>
+                <img src="./img/tku_logo.png" alt="#">
+                <p>109學年度第一學期</p>
+                <h2>課表</h2>
+            </ul>
+        </div>
+        <table border='2' style="border:5px #579097 groove;" cellpadding="10">
+            <tr class="col1">
+                <td colspan="2" class="clock"><i class="fas fa-clock fa-6x"></i></td>
+                <td class="week">星期一</td>
+                <td class="week">星期二</td>
+                <td class="week">星期三</td>
+                <td class="week">星期四</td>
+                <td class="week">星期五</td>
+                <td class="week">星期六</td>
+            </tr>
+            <tr>
+                <td class="list">5</td>
+                <td class="time">12:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>13:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2"  class="class3" onclick="changelist(3)">西洋歌劇欣賞入門<br/>B 609</td>
+            </tr>
+            <tr>
+                <td class="list">6</td>
+                <td class="time">13:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>14:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">7</td>
+                <td class="time">14:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>15:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">8</td>
+                <td class="time">15:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>16:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="3" class="class4" onclick="changelist(4)">電路設計軟體模擬<br />E 219</td>
+            </tr>
+            <tr>
+                <td class="list">9</td>
+                <td class="time">16:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>17:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">10</td>
+                <td class="time">17:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>18:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">11</td>
+                <td class="time">18:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>19:00</td>
+                <td rowspan="3" class="class1" onclick="changelist(1)">靜態網頁設計<br />E 201</td>
+                <td></td>
+                <td rowspan="2" class="class2" onclick="changelist(2)">基礎電學<br />E 509</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">12</td>
+                <td class="time">19:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>20:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">13</td>
+                <td class="time">20:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>21:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="list">14</td>
+                <td class="time">21:10<br/><i class="fas fa-long-arrow-alt-down"></i><br/>22:00</td>
+                <td class="class5" onclick="changelist(5)">靜態網頁設計<br />(實習課)<br />E 201</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr >
+                <td colspan="2" class="main">學分小表</td>
+                <td class="word">本期學分</td>
+                <td class="got">10</td>
+                <td class="word">已修學分</td>
+                <td class="got">63</td>
+                <td class="word">剩餘學分</td>
+                <td class="got">65</td>
+            </tr>
+        </table>
+    </div>
+    <div class="top"><a href="#top">top  <i class="fas fa-angle-double-up"></i></a></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./school_time.js"></script>
+</body>
+
+</html>

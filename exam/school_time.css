@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.contaniner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* profile */
+
+.profile {
+    border-bottom-style: ridge;
+    width: 100%;
+    height: 300px;
+    background: url('./img/Photo\ by\ Collin\ Johnson\ on\ Unsplash.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.profile ul {
+    width: 100%;
+    position: absolute;    
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.profile ul img {
+    width: 150px;
+    background-color: #ffffff;
+    border-radius: 50%;
+} 
+
+.profile p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+
+.profile h2 {
+    color: white;
+}
+
+/* table */
+
+table {
+    background: #88b6bc;
+    text-align: center;
+    height: 1100px;
+    width: auto;
+    margin: 0 auto 100px;
+    font-weight: bold;
+    cursor: default;
+}
+
+td {
+    background: lightyellow;
+    border-radius: 10%;
+}
+
+td.clock {
+    background: darkslategray;
+}
+
+td.clock i {
+    margin: auto;
+    background: floralwhite;
+    border-radius: 50%;
+}
+
+td.week {
+    background:lightslategray;
+    font-size: 1.3rem;
+    color: seashell;
+    width: 175px;
+}
+
+td.list {
+    width: 25px;
+    background: darkgray;
+    font-size: 1.3rem;
+}
+
+td.time {
+    width: 125px;
+    background:lightgray;
+    font-size: 1.3rem;
+    color: rgb(65, 26, 14);
+}
+
+td.main {
+    height: 80px;
+    background-color: rgb(252, 87, 11);
+    font-size: 1.5rem;
+}
+
+td.word {
+    background: rgb(230, 181, 58);
+    font-size: 1.5rem;
+}
+
+td.got {
+    background: rgb(146, 146, 66);
+    font-size: 1.5rem;
+}
+
+td.class1{
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: rgb(47, 172, 221);
+}
+
+td.class2{
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: rgb(98, 228, 109);
+}
+
+td.class3{
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: rgb(92, 109, 185);
+}
+
+td.class4 {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: rgb(221, 106, 85);
+}
+
+td.class5 {
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: rgb(197, 79, 98);
+}
+
+td.class1:hover,
+td.class2:hover,
+td.class3:hover,
+td.class4:hover,
+td.class5:hover {
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+/* class list */
+
+.class_menu {
+    display: block;
+    position:fixed;
+    z-index: 5;
+    width: 483px;
+    height: auto;
+    background: rgba(128, 128, 128, 0.705);
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0 20px 20px;
+    font-weight: bolder;
+    color: honeydew;
+    transform: translateX(-1000px);
+    transition: 0.5s ease-in-out;
+}
+
+.class_menu.show {
+    transform: translateX(0px);
+    transition: 0.5s ease-in-out;
+}
+
+.class_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 30px auto 0;
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.class_menu li {
+    margin-bottom: 15px;
+}
+
+.detail {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.detail li {
+    margin-bottom: 20px;
+}
+
+.detail li.title{
+    margin-top: 20px;
+    width: auto;
+    
+}
+
+
+/* class-click */
+.class-click {
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.863) ;
+    display: block;
+    position:fixed;
+    bottom: 120px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 45%;
+    color: #f1f5f7;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #000000;
+}
+
+.class-click:hover {
+    transform: scale(1.25);
+}
+
+.top {
+    right: 0;
+    bottom: 20px;
+    position: fixed;
+    margin: 20px;
+    padding: 20px;
+    background: gray;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    border: none;
+  }

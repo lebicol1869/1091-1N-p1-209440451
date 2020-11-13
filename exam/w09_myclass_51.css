@@ -1,0 +1,54 @@
+* {
+    text-align: center;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+table {
+    background-color:#000000;
+}
+
+.lis {
+    display: flex;
+}
+.name {
+    background-color: darkslategrey;
+    color: white;
+    font-size: 1.5rem ;
+    font-weight: bold;
+}
+
+.week {
+    background-color: thistle;
+}
+
+.aa {
+    width: 25px;
+    height: 80px;
+    background-color: darkgoldenrod;
+}
+
+.tt {
+    background-color: rgba(245, 169, 28, 0.863);
+}
+.bb {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: orchid;
+}
+.cc {
+     background-color: teal;
+     color: white;
+}
+.dd {
+    padding-left: 50px;
+    text-align: left;
+    background-color: rgb(219, 130, 130);
+}
+tr {
+    background-color: whitesmoke;
+}
+
+td {
+    width: 150px;
+    height: 50px;
+}
