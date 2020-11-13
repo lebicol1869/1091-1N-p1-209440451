@@ -310,9 +310,13 @@ ul {
     margin-bottom: 20px;
   }
 
+  .carbon .content p {
+    display: none;
+  }
   .links .links-inner {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
 @media (max-width: 500px) {
